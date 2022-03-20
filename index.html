@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee Website NH</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/Nguyen_CSS.css">
+    <link rel="stylesheet" href="./assets/css/Hieu_CSS.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css">
@@ -16,21 +17,33 @@
 
 <body>
     <div class="app">
+        <div class="Nguyen_HTML"></div>
         <header class="header">
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--sperate">
+                            <span>Kênh người bán</span>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--sperate">
+                            <span>Trở thành người bán Shopee</span>
+                        </li>
                         <li class=" header__navbar-item header__navbar-item--sperate header__navbar-item--has-qr ">
-                            Vào cửa hàng trên ứng dụng Shopee
+                            Tải ứng dụng
                             <div class="header-qr">
                                 <img src="./assets/img/qrcode.png" alt="QR Code" class="header__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="" class="header__qr-link">
-                                        <img src="./assets/img/googleplay.png" alt="Google Play" class="header__qr-download-img">
-                                    </a>
-                                    <a href="" class="header__qr-link">
                                         <img src="./assets/img/appstore.png" alt="Google Play" class="header__qr-download-img">
                                     </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/googleplay.png" alt="Google Play" class="header__qr-download-img">
+                                    </a>
+                                    <div class="header__qr-app-gallery">
+                                        <a href="" class="header__qr-link ">
+                                            <img src="./assets/img/app_gallery.png" alt="App Gallery" class="header__qr-download-img header__qr-download-img-app-gallery ">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -43,7 +56,6 @@
                                 <i class="header__navbar-icon fa-brands fa-instagram"></i>
                             </a>
                         </li>
-
                     </ul>
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item-has-notify">
@@ -93,10 +105,25 @@
                                 </footer>
                             </div>
                         </li>
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-language-viewed">
                             <a href="" class="header__navbar-item-link">
-                                <i class="header__navbar-icon fa-solid fa-circle-question"></i> Trợ giúp
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>Hỗ trợ
                             </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-language-viewed">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="fa-solid fa-globe header__navbar-icon"></i>Tiếng Việt
+                                <i class="fa-solid fa-angle-down  header__navbar-icon-language"></i>
+                            </a>
+                            <div class="header__navbar-language ">
+                                <ul class="header__navbar-language-option">
+                                    <li class="header__navbar-language-item">
+                                        <span>Tiếng Việt</span>
+                                    </li>
+                                    <li class="header__navbar-language-item">
+                                        <span>English</span>
+                                    </li>
+                                </ul>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--sperate js_register">Đăng kí</li>
                         <li class="header__navbar-item header__navbar-item--strong js_login">Đăng nhập</li>
@@ -115,20 +142,7 @@
                         <div class="header-search-input-wrap">
                             <input type="text" class="header-search-input" placeholder="Tìm kiếm sản phẩm">
                         </div>
-                        <div class="header__search-selection">
-                            <span class="header__search-selection-label">Trong shop</span>
-                            <i class="fa-solid fa-angle-down header__search-selection-icon"></i>
-                            <ul class="header__search-selection-option">
-                                <li class="header__search-selection-item header__search-selection-item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fa-solid fa-check"></i>
-                                </li>
-                                <li class="header__search-selection-item">
-                                    <span>Ngoài shop</span>
-                                    <i class="fa-solid fa-check"></i>
-                                </li>
-                            </ul>
-                        </div>
+
                         <button class="header-search-btn">
                             <i class="fa-solid fa-magnifying-glass header-search-btn-icon"></i>
                         </button>
@@ -140,577 +154,1669 @@
                             <div class="header__cart-list header__cart-list--no-cart">
                                 <img src="./assets/img/no-cart.png" alt="" class="header__cart-img">
                                 <span class="header__cart-list-mess">
-                                Chưa có sản phẩm
+                                Chưa Có Sản Phẩm
                             </span>
                             </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
+                <div class="header-with-search-product">
+                    <ul class="header-with-search-product-list">
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Dép
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Áo Khoác
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Váy
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Túi Xách Nữ
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Áo Thun
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Áo Croptop
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Áo Phông
+                        </a>
+                        </li>
+                        <li class="header-with-search-product-item">
+                            <a href="" class="header-with-search-product-item-link">
+                            Ốp Iphone
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
         </header>
-        <div class="header_video">
-            <video class="header_video-link" autoplay muted loop>
-                <source class="header_video-play" src="./assets/img/Shopee_ADS.mp4" type="video/mp4">
-              </video>
-            <img src="https://cf.shopee.vn/file/ca5f5e7bde015457e5f693d5c31b7ddd_xxhdpi" alt="" class="header_video-img">
-        </div>
-        <div class="container">
+        <div class="Hieu_HTML">
             <div class="grid">
-                <div class="grid__row app_container">
-                    <div class="grid__column-2">
-                        <nav class="category">
-                            <h3 class="category__heading">
-                                <i class="category__heading-icon fa-solid fa-list"></i> DANH MỤC
-                            </h3>
-                            <ul class="category-list">
-                                <li class="category-item category-item--active">
-                                    <a href="" class="category-item-link">LAPTOP Dell</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item-link">LAPTOP Asus</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item-link">LAPTOP Acer</a>
-                                </li>
-                                <li class="category-item ">
-                                    <a href="" class="category-item-link">LAPTOP HP</a>
-                                </li>
-                                <li class="category-item ">
-                                    <a href="" class="category-item-link">Mainboard</a>
-                                </li>
-                                <li class="category-item ">
-                                    <a href="" class="category-item-link">Vỏ Case chính hãng</a>
-                                </li>
-                                <li class="category-item ">
-                                    <a href="" class="category-item-link">Keyboard</a>
-                                </li>
-                            </ul>
-                        </nav>
+                <div class="header_video">
+                    <video class="header_video-link" autoplay muted loop>
+                    <source class="header_video-play" src="./assets/img/Shopee_ADS.mp4" type="video/mp4">
+                  </video>
+                    <img src="https://cf.shopee.vn/file/ca5f5e7bde015457e5f693d5c31b7ddd_xxhdpi" alt="" class="header_video-img">
+                </div>
+            </div>
+        </div>
+        <div class="Hieu_HTML">
+            <div class="header__section">
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(https://cf.shopee.vn/file/a32aead8886596e8c4a679e6753f7680_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Yên Tâm Mua Hàng</div>
+                        </div>
+
                     </div>
-                    <div class="grid__column-10">
-                        <div class="home_filter">
-                            <span class="home_filter-title">Sắp xếp theo</span>
-                            <button class="home_filter-btn btn">Phổ biến</button>
-                            <button class="home_filter-btn btn btn--primary">Mới nhất</button>
-                            <button class="home_filter-btn btn">Bán chạy</button>
-                            <div class="select-input">
-                                <span class="select-input__label">Giá</span>
-                                <i class="select-input__label--icon fa-solid fa-angle-down"></i>
-                                <ul class="select-input__list">
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
-                                    </li>
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
-                                    </li>
-                                </ul>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(	https://cf.shopee.vn/file/bb0ed4c1a56099d3456a9e1c493cecaf_xhdpi)">
                             </div>
-                            <div class="home_filter--page">
-                                <span class="home_filter--page-num">
-                                    <span class="home_filter--page-current">1</span>/14
-                                </span>
-                                <div class="home_filter--page-control">
-                                    <a href="" class="home_filter--page-btn home_filter--page-btn--disable ">
-                                        <i class="home_filter--page-icon fa-solid fa-angle-left"></i>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Tech Zone - Siêu Thị Điện Tử</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(https://cf.shopee.vn/file/96385a65fa50800e096bb790fa5c1dba_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Deal Sốc Từ 1K</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(	https://cf.shopee.vn/file/9da9a3acb5520d601f86a90434f455a5_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Hoàn Xu 20% - Đơn Từ 0Đ</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(	https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Nạp Thẻ, Hóa Đơn & E-voucher</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(https://cf.shopee.vn/file/698f220a98642d9eebf8177db6a08700_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Freeship Xtra Đến 70K</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(https://cf.shopee.vn/file/765ca66457ec08802f74c529f71a99b7_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Hàng Hiệu -50% -Deal 50%</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Hàng Quốc Tế</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="header__section-item">
+                    <div class="header__section-item-body">
+                        <div class="header__section-item-option-mode header__section-item-option-mode--active">
+                            <div class="header__section-item-option-img header__section-item-option-img--active" style="background-image:url(https://cf.shopee.vn/file/0a3e3aa16b083d6b7e2c25a8f2c16731_xhdpi)">
+                            </div>
+                            <div class="header__section-item-option-text header__section-item-option-text-adjust">Shopee Premium</div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="header__banner">
+                <div class="grid">
+                    <a href="" class="header__banner-link">
+                        <img src="https://cf.shopee.vn/file/0ed0d80b26a4a8dc8f8652679f37604d" alt="" class="header__banner-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="Nguyen_HTML">
+            <div class="grid">
+                <div class="body__category">
+                    <div class="body__category_heading">
+                        <span class="body__category_heading-label">DANH MỤC</span>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(	https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn)" ;></div>
+                                <span class="body__category_heading-text ">Thời Trang Nam</span>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn)" ;></div>
+                                <div class="body__category_heading-text ">Điện Thoại & Phụ Kiện</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn)" ;></div>
+                                <div class="body__category_heading-text ">Thiết Bị Điện Tử</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn)" ;></div>
+                                <div class="body__category_heading-text ">Máy Tính & Laptop</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn)" ;></div>
+                                <div class="body__category_heading-text ">Máy Ảnh & Máy Quay Phim</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn)" ;></div>
+                                <div class="body__category_heading-text ">Đồng Hồ</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn)" ;></div>
+                                <div class="body__category_heading-text ">Giày Dép Nam</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn)" ;></div>
+                                <div class="body__category_heading-text ">Thiết Bị Điện Gia Dụng</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn)" ;></div>
+                                <div class="body__category_heading-text ">Thể Thao & Du Lịch</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn)" ;></div>
+                                <div class="body__category_heading-text ">Ô Tô & Xe Máy & Xe Đạp</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn)" ;></div>
+                                <div class="body__category_heading-text ">Thời Trang Nữ</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/099edde1ab31df35bc255912bab54a5e_tn)" ;></div>
+                                <div class="body__category_heading-text ">Mẹ & Bé</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/24b194a695ea59d384768b7b471d563f_tn)" ;></div>
+                                <div class="body__category_heading-text ">Nhà Cửa & Đời Sống</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/ef1f336ecc6f97b790d5aae9916dcb72_tn)" ;></div>
+                                <div class="body__category_heading-text ">Sắc Đẹp</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(	https://cf.shopee.vn/file/49119e891a44fa135f5f6f5fd4cfc747_tn)" ;></div>
+                                <div class="body__category_heading-text ">Sức Khỏe</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/48630b7c76a7b62bc070c9e227097847_tn)" ;></div>
+                                <div class="body__category_heading-text ">Giày Dép Nữ</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/fa6ada2555e8e51f369718bbc92ccc52_tn)" ;></div>
+                                <div class="body__category_heading-text ">Túi Ví Nữ</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/8e71245b9659ea72c1b4e737be5cf42e_tn)" ;></div>
+                                <div class="body__category_heading-text ">Phụ Kiện & Trang Sức Nữ</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/c432168ee788f903f1ea024487f2c889_tn)" ;></div>
+                                <div class="body__category_heading-text ">Bách Hóa Online</div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10-1">
+                            <a class="body__category_heading-contain" href="#">
+                                <div class="body__category_heading-img" style="background-image: url(https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn)" ;></div>
+                                <div class="body__category_heading-text ">Nhà Sách Online</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__banner section__wrap-banner">
+                <div class="grid">
+                    <a href="" class="header__banner-link">
+                        <img src="https://cf.shopee.vn/file/6c47a11cba937f6bd77d3fb18f25f79a" alt="" class="header__banner-img">
+                    </a>
+                </div>
+            </div>
+            <!-- Section Shopee -->
+            <div class="section-shopee-mall">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="section-shopee-mall-heading">
+                            <div class="section-shopee-mall-heading-label">
+                                <a href="" class="section-shopee-mall-heading-text">SHOPEE MALL</a>
+                                <div class="section-shopee-mall-heading-link">
+                                    <a href="" class="section-shopee-mall-heading-link-label">
+                                        <img src="./assets/img/back_icon.png" alt="" class="section-shopee-mall-heading-link-img">
+                                        <span class="section-shopee-mall-heading-link-body">7 Ngày Miễn Phí Trả Hàng</span>
                                     </a>
-                                    <a href="" class="home_filter--page-btn">
-                                        <i class="home_filter--page-icon fa-solid fa-angle-right"></i>
+                                </div>
+                                <div class="section-shopee-mall-heading-link">
+                                    <a href="" class="section-shopee-mall-heading-link-label">
+                                        <img src="./assets/img/car__icon.png" alt="" class="section-shopee-mall-heading-link-img">
+                                        <span class="section-shopee-mall-heading-link-body">Hàng Chính Hãng 100%</span>
+                                    </a>
+                                </div>
+                                <div class="section-shopee-mall-heading-link">
+                                    <a href="" class="section-shopee-mall-heading-link-label">
+                                        <img src="./assets/img/sheid__icon.png" alt="" class="section-shopee-mall-heading-link-img">
+                                        <span class="section-shopee-mall-heading-link-body">Miễn Phí Vận Chuyển</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="section-shopee-mall-heading-see-more">
+                                <a href="" class="section-shopee-mall-heading-link-label">
+                                    <span class="section-shopee-mall-heading-link-see-more">Xem Tất Cả</span>
+                                    <i class="fa-solid fa-angle-right section-shopee-mall-heading-link-see-more-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-40">
+                            <a href="" class="section-shopee-mall-contain-banner">
+                                <img src="./assets/img/banner_2.png" alt="" class="section-shopee-mall-contain-banner-img">
+                            </a>
+                        </div>
+                        <div class="grid__column-60">
+                            <div class="grid__row">
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/67e582223d06521ec55ec4196ec0e7a2_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Vua bếp Tefal</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/6cb655c093dbb5e2ca7efacd8c304587_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Mua là có quà</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/c7b3b41eb5affd0bc38a8b1ac013c8f3_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Da khỏe sạch mụn</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/3c7c6b77f6139aac6f8a869f2324e879_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Ưu đãi đến 40%</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/3bd9d8aaf08cbc52fe9529676bad36ae_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Mua là có quà</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/43343dd1637ea694241c9579fdb73b97_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Săn kính 0đ</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/2e8142f55706b335c34a43d85a31ee0b_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Ưu đãi đến 50%</h4>
+                                    </a>
+                                </div>
+                                <div class="grid__column-25">
+                                    <a href="" class="section-shopee-mall-contain-body-item">
+                                        <div class="section-shopee-mall-contain-body-item-img" style="background-image: url(https://cf.shopee.vn/file/99e07615693bb7327f03164806345eca_xhdpi);"></div>
+                                        <h4 class="section-shopee-mall-contain-body-item-text">Mua 1 tặng 1</h4>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="home_product">
-                            <div class="grid">
-                                <div class="grid__row">
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="section-trending">
+                    <div class="grid__row">
+                        <div class="section-trending-heading">
+                            <div class="section-trending-heading-label">
+                                <div class="section-trending-heading-text">XU HƯỚNG TÌM KIẾM</div>
+                            </div>
+                            <a href="" class="section-trending-heading-link">
+                                <i class="seaction-trending-heading-icon fa-solid fa-rotate"></i>
+                                <span class="section-trending-heading-body">Xem Thêm</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-3-4">
+                            <div class="section-trending-wrap">
+                                <a href="" class="section-trending-body">
+                                    <div class="section-trending-body-heading">
+                                        <span class="section-trending-body-heading-label">Dép</span>
+                                        <p class="section-trending-body-heading-info">3tr+ sản phẩm</p>
                                     </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid__column-2-4">
-                                        <!-- Product -->
-                                        <a class="home_product-item" href="#">
-                                            <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/5eb9b8fa76497d3785ebe6f3e6abc29b)" ;></div>
-                                            <h4 class=" home_product-item-name ">Mainboard - ASUS PRIME H310M-CS R2.0 - Asus H410M-k- Hàng Chính Hãng</h4>
-                                            <div class="home_product-item-price">
-                                                <span class="home_product-item-price--old">12.300.000đ</span>
-                                                <span class="home_product-item-price--current">9.900.000đ</span>
-                                            </div>
-                                            <div class="home_product-item-action">
-                                                <span class="home_product-item-like home_product-item-like--liked">
-                                                    <i class="home_product-item-like-icon-empty far fa-heart"></i>
-                                                    <i class="home_product-item-like-icon-fill fas fa-heart"></i>
-                                                </span>
-                                                <div class="home_product-item-rate">
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="home_product-item-star-gold  fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <span class="home_product-item-sold">100 đã bán</span>
-                                            </div>
-                                            <div class="home_product-item__origin">
-                                                <span class="home_product-item__brand">ASUS</span>
-                                                <span class="home_product-item_origin-name">Việt Nam</span>
-                                            </div>
-                                            <div class="home_product-item_favourite">
-                                                <i class="fa-solid fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home_product-item__sale-off">
-                                                <span class="home_product-item__sale-off-percent">10%</span>
-                                                <span class="home_product-item__sale-off-label">GIẢM</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
+                                <div class="section-trending-body-contain-img" style="background-image:url(https://cf.shopee.vn/file/0bcec6e6c180b6cc3adfecee60873a25) ;"></div>
                             </div>
                         </div>
-                        <ul class="pagination pagination_home-product">
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">
-                                    <i class="pagination__item-icon fa-solid fa-angle-left"></i>
+                        <div class="grid__column-3-4">
+                            <div class="section-trending-wrap">
+                                <a href="" class="section-trending-body">
+                                    <div class="section-trending-body-heading">
+                                        <span class="section-trending-body-heading-label">Váy</span>
+                                        <p class="section-trending-body-heading-info">2tr+ sản phẩm</p>
+                                    </div>
                                 </a>
-                            </li>
-                            <li class="pagination__item pagination__item--active">
-                                <a href="" class="pagination__item-link">1</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">3</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">5</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">...</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">14</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">
-                                    <i class="pagination__item-icon fa-solid fa-angle-right"></i>
+                                <div class="section-trending-body-contain-img" style="background-image:url(	https://cf.shopee.vn/file/d9b1c4a1efd0b02cdb27098ec561f24b) ;"></div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <div class="section-trending-wrap">
+                                <a href="" class="section-trending-body">
+                                    <div class="section-trending-body-heading">
+                                        <span class="section-trending-body-heading-label">Áo Phông</span>
+                                        <p class="section-trending-body-heading-info">454k+ sản phẩm</p>
+                                    </div>
                                 </a>
-                            </li>
-                        </ul>
+                                <div class="section-trending-body-contain-img" style="background-image:url(	https://cf.shopee.vn/file/b6e5e37fce1feff723a00f8d0141d2cf) ;"></div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <div class="section-trending-wrap">
+                                <a href="" class="section-trending-body">
+                                    <div class="section-trending-body-heading">
+                                        <span class="section-trending-body-heading-label">Túi Xách Nữ</span>
+                                        <p class="section-trending-body-heading-info">412k+ sản phẩm</p>
+                                    </div>
+                                </a>
+                                <div class="section-trending-body-contain-img" style="background-image:url(https://cf.shopee.vn/file/1ebfecec4b63803d266ac5587e19caef) ;"></div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <div class="section-trending-wrap">
+                                <a href="" class="section-trending-body">
+                                    <div class="section-trending-body-heading">
+                                        <span class="section-trending-body-heading-label">Áo Khoác</span>
+                                        <p class="section-trending-body-heading-info">1tr+ sản phẩm</p>
+                                    </div>
+                                </a>
+                                <div class="section-trending-body-contain-img" style="background-image:url(https://cf.shopee.vn/file/8648fa9dbb866fa492c2a27a0e01b115) ;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="container__most-search">
+                    <div class="container__most-search-heading">
+                        <div class="container__most-search-heading-label">
+                            <div class="container__most-search-heading-text">TÌM KIẾM HÀNG ĐẦU</div>
+                        </div>
+                        <a href="" class="container__most-search-heading-link">
+                            <span class="container__most-search-heading-link-label">Xem Tất Cả</span>
+                            <i class="fa-solid fa-angle-right container__most-search-heading-link-icon "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__most-search-wrap">
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a href="" class="container__most-search-product">
+                                <div class="container__most-search-product-img" style="background-image: url(	https://cf.shopee.vn/file/82658d73a4cfedb88d501f85327560a8_tn);">
+                                    <span class="container__most-search-product-img-info">Bán 160k+ / tháng</span>
+                                    <div class="container__most-search-product-top">
+                                        <img src="./assets/img/top.png" alt="" class="container__most-search-product-top-img">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="container__most-search-product-link">
+                                <h4 class="container__most-search-product-text">Ốp Iphone 5</h4>
+                            </a>
+
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" class="container__most-search-product">
+                                <div class="container__most-search-product-img" style="background-image: url(https://cf.shopee.vn/file/1c23ccb76031614584cbdd977e31bd7a_tn);">
+                                    <span class="container__most-search-product-img-info">Bán 153k+ / tháng</span>
+                                    <div class="container__most-search-product-top">
+                                        <img src="./assets/img/top.png" alt="" class="container__most-search-product-top-img">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="container__most-search-product-link">
+                                <h4 class="container__most-search-product-text">Ốp Lưng Iphone</h4>
+                            </a>
+
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" class="container__most-search-product">
+                                <div class="container__most-search-product-img" style="background-image: url(https://cf.shopee.vn/file/9ec433bca2d7e0f8f6fc2ce1c5097882_tn);">
+                                    <span class="container__most-search-product-img-info">Bán 109k+ / tháng</span>
+                                    <div class="container__most-search-product-top">
+                                        <img src="./assets/img/top.png" alt="" class="container__most-search-product-top-img">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="container__most-search-product-link">
+                                <h4 class="container__most-search-product-text">Quần Rộng Ống Nữ</h4>
+                            </a>
+
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" class="container__most-search-product">
+                                <div class="container__most-search-product-img" style="background-image: url(https://cf.shopee.vn/file/1378b90f69b5e6208e6e4dee751c9093_tn);">
+                                    <span class="container__most-search-product-img-info">Bán 95k+ / tháng</span>
+                                    <div class="container__most-search-product-top">
+                                        <img src="./assets/img/top.png" alt="" class="container__most-search-product-top-img">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="container__most-search-product-link">
+                                <h4 class="container__most-search-product-text">Bông Tẩy Trang 3 Lớp Cotton Pads</h4>
+                            </a>
+
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" class="container__most-search-product">
+                                <div class="container__most-search-product-img" style="background-image: url(https://cf.shopee.vn/file/874878564caa2dbaf2ac94b18334ecf9_tn);">
+                                    <span class="container__most-search-product-img-info">Bán 99k+ / tháng</span>
+                                    <div class="container__most-search-product-top">
+                                        <img src="./assets/img/top.png" alt="" class="container__most-search-product-top-img">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="container__most-search-product-link">
+                                <h4 class="container__most-search-product-text">Bút Kẻ Mắt Chống Nước</h4>
+                            </a>
+
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" class="container__most-search-product">
+                                <div class="container__most-search-product-img" style="background-image: url(https://cf.shopee.vn/file/8fc5ceae001ec4a6b25731c87413706b_tn);">
+                                    <span class="container__most-search-product-img-info">Bán 73k+ / tháng</span>
+                                    <div class="container__most-search-product-top">
+                                        <img src="./assets/img/top.png" alt="" class="container__most-search-product-top-img">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="container__most-search-product-link">
+                                <h4 class="container__most-search-product-text">Mắt Kính Gọng Tròn</h4>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row app_container">
+                    <div class="home_filter">
+                        <div class="home_filter-title-wrap">
+                            <span class="home_filter-title">GỢI Ý HÔM NAY</span>
+                            <div class="home_fiter-title-navbar">
+                            </div>
+                        </div>
+                        <div class="home_filter-label">
+                            <img src="	https://cf.shopee.vn/file/85b9cd0df1bd3de52e9369410f9866a1" alt="" class="home_filter-label-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="home_product">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/b8b2c1ab02fef9ae3766445569b09651_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[Mã FAMARAL1 giảm 10K đơn từ 50K] 🔥HÀNG SIÊU CẤP🔥 Dép tăng chiều cao nam nữ thời trang đúc nguyên khối cực bền</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫11.000</span>
+                                        <span class="home_product-item-price--current">₫1.100</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 1.1k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/8ba980f655f8e3c376a5d4b98b049208_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[Mã FAMARAL1 giảm 10K đơn 50K] Dép gấu dễ thương hot trend 2021</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫50.000</span>
+                                        <span class="home_product-item-price--current">đ35.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 8,5k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">47%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/95db58d41cb3f89b386ead43f1821c07_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">(Chính hãng) Đơn hàng mua sỉ (Hàng Mới Về) Son môi có dưỡng màu sắc tự nhiên chống thấm nước xinh xắn HOHOKANG</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">12.300.000đ</span> -->
+                                        <span class="home_product-item-price--current">₫5.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 1</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__sale-off">
+                                            <span class="home_product-item__sale-off-percent">10%</span>
+                                            <span class="home_product-item__sale-off-label">GIẢM</span>
+                                        </div> -->
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/0d8277944ba51bb8fb3f9ad27de6efac_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Giày Jordan Low High Hồng Đen cổ cao, Giày thể thao nữ Jordan Cổ cao Hot Trend 2021</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫5</span> -->
+                                        <span class="home_product-item-price--current">₫25.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 99</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__sale-off">
+                                            <span class="home_product-item__sale-off-percent">10%</span>
+                                            <span class="home_product-item__sale-off-label">GIẢM</span>
+                                        </div> -->
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/91222b2439250c592a78de11473435a4_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">🔥HÀNG SIÊU CẤP🔥Dép nam,Dép độn tăng chiều cao nam nư quai ngang,đế chống trơn trượt cao cấp</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">12.300.000đ</span> -->
+                                        <span class="home_product-item-price--current">₫1.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home_product-item-sold">Đã bán 1</span> -->
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__sale-off">
+                                            <span class="home_product-item__sale-off-percent">10%</span>
+                                            <span class="home_product-item__sale-off-label">GIẢM</span>
+                                        </div> -->
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/676f080df1017d0857c5c5d64f616167_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Áo thun nam nữ unisex form rộng tay lỡ MRTD Aothunxinhy, áo phông form rộng cotton mát mịn phong cách</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫21.600</span>
+                                        <span class="home_product-item-price--current">₫10.800</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 5.2k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/d4116c92664774fb993b862801894f05_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Áo phông nam nữ unisex form rộng Future Mendeleepi, áo thun oversize phong cách cá tính</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫22.000</span>
+                                        <span class="home_product-item-price--current">₫11.600</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 5.2k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/d04040a34b1020fcbe1693870473a4aa_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[Mã FAMARAL1 giảm 10K đơn 50K] DÉP NỮ đế cao 5cm, dép quai ngang chất liệu Eva cao cấp không thấm nước</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">12.300.000đ</span> -->
+                                        <span class="home_product-item-price--current">₫40.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 159</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">20%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/59da42f14f049ac8d358987cef95ddae_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Son nắp tím A12 A11 A10 A08 A09 handmade đủ màu</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">12.300.000đ</span> -->
+                                        <span class="home_product-item-price--current">₫4.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">100 đã bán</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">20%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/4345258f492d5a71479e1c5dba7c18d1_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[Mã HIENOT16 giảm 5k đơn từ 155k] Giày Thể Thao Nữ Trắng Tuyết</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">12.300.000đ</span> -->
+                                        <span class="home_product-item-price--current">₫34.200</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 24</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">43%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/65d7aca938e9b848d251f968e098e443_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Váy Trễ Vai Bánh Bèo Tay bồng🎀 Đầm Dự Tiệc rớt Vai Màu Trắng🎀Áo lệch vai dài tay tiểu thư 2 lớp vintage</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">12.300.000đ</span> -->
+                                        <span class="home_product-item-price--current">₫15.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 568</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/7cea5c27586361d3f0ba22922726c63f_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Áo thun nữ tay lỡ form rộng unsiex nam nữ mặc được màu hồng thêu cánh tiên siêu cute Xưởng sỉ nguyễn hoa</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫138.000</span>
+                                        <span class="home_product-item-price--current">₫69.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 7</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/aaaa5c620953880dcec0166c3423357d_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Chân váy xếp ly Tennis Skirt Chữ A Dáng Ngắn mã -Chân Váy Chữ A Xếp Ly Lưng Cao Phong Cách Hàn Quốc Dành Cho Phái Đẹp</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫185.000</span>
+                                        <span class="home_product-item-price--current">₫92.500</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 5,5k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/65c7c13bc356c7b0da1a0680291449dd_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Tai Nghe Bluetooth Không Dây inpods i12 TWS cảm ứng</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫185.000</span> -->
+                                        <span class="home_product-item-price--current">₫28.700</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 5,2k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">41%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/d3152c70f85efdcb058694aa50f8adfb_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Mắt kính gọng lớn chống ánh sáng xanh kiểu retro cao cấp</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫185.000</span> -->
+                                        <span class="home_product-item-price--current">₫3.300</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 13,2k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">59%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/eae7b48e305f610ea17cd778ca9fe1b1_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[Mã FAMARAL1 giảm 10k đơn từ 50k] DÉP CROSS Cá Full Tag Cao Cấp Đẹp Nhất [tặng 12 stick ]</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫185.000</span> -->
+                                        <span class="home_product-item-price--current">₫125.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 39k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">32%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/2647ccf73db8f9c2597cf08c623c7865_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Áo phông cotton tay lỡ dáng rộng unisex - AndMan</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫185.000</span> -->
+                                        <span class="home_product-item-price--current">₫19.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 84</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">46%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(	https://cf.shopee.vn/file/a255b8759a413f4faccbcb6e57a1c20c_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[VIDEO ẢNH THẬT 100%/]Áo Thun Mặc Đơn Đôi Nhóm- Áo Phông Tay Lỡ From rộng [CD] Unisex</h4>
+                                    <div class="home_product-item-price">
+                                        <span class="home_product-item-price--old">₫20.000</span>
+                                        <span class="home_product-item-price--current">₫10.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 194</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">49%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/2500398f46283b6a559e6ed63341c237_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">áo phông nam nữ SADBOIZ áo thun ESSENTIALS dáng rộng 4 mùa mặc đẹp giá rẻ</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫20.000</span> -->
+                                        <span class="home_product-item-price--current">₫40.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 1,9k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">20%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/9758e29868f9317a48a785e6010050c8_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[Mã FAMARAL1 giảm 10K đơn 50K] BALO HỘP ĐI HỌC- PHỐI LƯỚI VÀ MICA MẪU MỚI</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫20.000</span> -->
+                                        <span class="home_product-item-price--current">₫15.548</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 957</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">48%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/762ed7ec8eeaa3a0c50c34b259350776_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Áo Khoác Kaki Nữ Lót Lông Dây Rút Eo 🦋 Áo Jacket Đại Hàn Túi Chéo 2 Lớp 3 Màu 🦋</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫20.000</span> -->
+                                        <span class="home_product-item-price--current">₫75.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 1</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__sale-off">
+                                            <span class="home_product-item__sale-off-percent">48%</span>
+                                            <span class="home_product-item__sale-off-label">GIẢM</span>
+                                        </div> -->
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/d73c905c7b78b1d5df5b7641bc78a8b6_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Áo thun nam nữ tay lỡ unisex form rộng WAKING Hàn Quốc Siêu Đẹp áo phông basic tee hot trend mùa hè Wnx2 Store A207</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫20.000</span> -->
+                                        <span class="home_product-item-price--current">₫1.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 2,2k</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">50%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/b9114ebaa47aa93eb7d2416a9f0ca801_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">[FREE SHIP] Áo Khoác Hoodie- Áo Khoác Sweater- Áo Khoác Nỉ Bomber Phối màu Thiên Thần Cực HOt tpdg</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫20.000</span> -->
+                                        <span class="home_product-item-price--current">₫29.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 10</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__sale-off">
+                                            <span class="home_product-item__sale-off-percent">50%</span>
+                                            <span class="home_product-item__sale-off-label">GIẢM</span>
+                                        </div> -->
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <!-- Product -->
+                                <a class="home_product-item" href="#">
+                                    <div class="home_product-item-img" style="background-image: url(https://cf.shopee.vn/file/bf3de012edde8038c5db35a85847844a_tn)" ;></div>
+                                    <h4 class=" home_product-item-name ">Dép bánh mì Họa hoạt hình (CHỌN TĂNG 1 SIZE)</h4>
+                                    <div class="home_product-item-price">
+                                        <!-- <span class="home_product-item-price--old">₫20.000</span> -->
+                                        <span class="home_product-item-price--current">₫55.000</span>
+                                    </div>
+                                    <div class="home_product-item-action">
+                                        <span class="home_product-item-like home_product-item-like--liked">
+                                                        <i class="home_product-item-like-icon-empty far fa-heart"></i>
+                                                        <i class="home_product-item-like-icon-fill fas fa-heart"></i>
+                                                    </span>
+                                        <div class="home_product-item-rate">
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="home_product-item-star-gold  fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home_product-item-sold">Đã bán 232</span>
+                                    </div>
+                                    <!-- <div class="home_product-item__origin">
+                                            <span class="home_product-item__brand">ASUS</span>
+                                            <span class="home_product-item_origin-name">Việt Nam</span>
+                                        </div> -->
+                                    <div class="home_product-item_favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product-item__sale-off">
+                                        <span class="home_product-item__sale-off-percent">44%</span>
+                                        <span class="home_product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="home__see-more">
+                    <button class="home__see-more-btn">
+                            <span class="home__see-more-label">Xem Thêm</span></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    <div class="Hieu_HTMl">
         <footer class="footer">
             <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Trung tâm trợ giúp</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Shopee Mail</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Hướng dẫn mua hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Giới thiệu</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Giới thiệu</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Tuyển dụng</a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Điều khoản</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Danh mục</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    Latop
-                                </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    Mainboard
-                                </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    Bàn phím cơ
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Theo dõi chúng tôi</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    <i class="footer__list-item-icon fa-brands fa-facebook"></i>Facebook
-                                </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    <i class="footer__list-item-icon fa-brands fa-instagram"></i>Instagram
-                                </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">
-                                    <i class="footer__list-item-icon fa-brands fa-linkedin"></i>Linkedin
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
-                        <div class="footer__download">
-                            <img src="./assets/img/qrcode.png" alt="" class="footer__download-qr">
-                            <div class="footer__download-app">
-                                <img src="./assets/img/googleplay.png" alt="Google play" class="footer__download-app-img footer__download-app-img-gg">
-                                <img src="./assets/img/appstore.png" alt="App store" class="footer__download-app-img">
+                <div class="footer__shopee-info">
+                    <h2 class="footer__shopee-info-header">SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</h2>
+                    <p class="footer__shopee-info-body">Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch trực tuyến hàng đầu ở Đông Nam Á, Việt Nam, Singapore, Malaysia, Indonesia, Thái Lan, Philipin, Đài loan và Brazil. Với sự đảm
+                        bảo của Shopee, bạn sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ hết!</p>
+                    <a href="" class="footer__shopee-info-link">
+                        <span class="footer__shopee-info-link-label">Xem Thêm
+                            
+                        </span>
+                        <i class="fa-solid fa-angle-right footer__shopee-info-link-label-icon"></i>
+                    </a>
+                </div>
+                <div class="footer__wrap-body">
+                    <div class="grid__row">
+                        <div class="grid__column-3-4">
+                            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Trung tâm trợ giúp</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Shopee Blog</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Shopee Mall</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Hướng Dẫn Mua Hàng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Hướng Dẫn Bán Hàng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Thanh Toán</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Shopee Xu</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Vận Chuyển</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Trả Hàng & Hoàn tiền</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chăm Sóc Khách Hàng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chính Sách Bảo Hành</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <h3 class="footer__heading">Về Shopee</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Giới Thiệu Về Shopee Việt Nam</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Tuyển Dụng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Điều Khoản Shopee</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chính Sách Bảo Mật</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chính Hãng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Kênh Người Bán</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Flash Sales</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">Liên Hệ Với Truyền Thông</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <h3 class="footer__heading">Thanh Toán</h3>
+                            <div class="grid__row">
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-visa" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-master-card" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-jcb" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-amex" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-cod" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-pay-0" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-img-shopee" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                            </div>
+                            <h3 class="footer__heading " style="margin-top: 30px;">Đơn vị vận chuyển</h3>
+                            <div class="grid__row">
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-shopee-x" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-ghtk" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-ghn" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-viettle" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-viet-nam" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-j-and-t" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-grab" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-transport-ninja" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                                <div class="grid__column-3-3">
+                                    <div class="footer__heading-pay-best-express" style="background-image: url(./assets/img/footer-pay.png);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">
+                                        <i class="footer__list-item-icon fa-brands fa-facebook"></i>Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">
+                                        <i class="footer__list-item-icon fa-brands fa-instagram"></i>Instagram
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-item-link">
+                                        <i class="footer__list-item-icon fa-brands fa-linkedin"></i>Linkedin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-3-4">
+                            <h3 class="footer__heading">Tải Ứng Dụng Shopee Ngay Thôi</h3>
+                            <div class="footer__download">
+                                <img src="./assets/img/qrcode.png" alt="" class="footer__download-qr">
+                                <div class="footer__download-app">
+                                    <a href="" class="footer__download-link"><img src="./assets/img/appstore.png" alt="Google play" class="footer__download-app-img footer__download-app-img-gg"></a>
+                                    <a href="" class="footer__download-link"><img src="./assets/img/googleplay.png" alt="App store" class="footer__download-app-img footer__download-app-img-gg "></a>
+                                    <a href="" class="footer__download-link"> <img src="./assets/img/app_gallery.png" alt="" class="footer__download-app-img"></a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -718,103 +1824,133 @@
             </div>
             <div class="footer__bottom">
                 <div class="grid">
-                    <div class="grid__row">
-                        <p class="footer__text">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+                    <ui class="footer__bottom-policy-list">
+                        <li class="footer__bottom-policy-list-item">
+                            <a href="" class="footer__bottom-policy-list-link">CHÍNH SÁCH BẢO MẬT</a>
+                        </li>
+                        <li class="footer__bottom-policy-list-item">
+                            <a href="" class="footer__bottom-policy-list-link">QUY CHẾ HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="footer__bottom-policy-list-item">
+                            <a href="" class="footer__bottom-policy-list-link">CHÍNH SÁCH VẬN CHUYỂN</a>
+                        </li>
+                        <li class="footer__bottom-policy-list-item">
+                            <a href="" class="footer__bottom-policy-list-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                        </li>
+                    </ui>
+                    <div class="footer__bottom-policy-check">
+                        <a href="" class="footer__bottom-policy-check-link">
+                            <img src="./assets/img/checked.png" alt="" class="footer__bottom-policy-check-img">
+                        </a>
+                        <a href="" class="footer__bottom-policy-check-link">
+                            <img src="./assets/img/checked.png" alt="" class="footer__bottom-policy-check-img">
+                        </a>
+                    </div>
+                    <div class="footer__bottom-policy-company">
+                        <p class="footer__bottom-policy-company-header">Công ty TNHH Shopee</p>
+                        <p>Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                        <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
+                        <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                        <p>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
                     </div>
                 </div>
             </div>
-        </footer>
+    </div>
+    </footer>
+    </div>
     </div>
     <!-- Modal layout -->
-    <div class="modal js_modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <!-- Authen form -->
-            <!-- Register form -->
-            <div class="auth-form auth-form_register ">
-                <div class="auth-form__container">
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng kí</h3>
-                        <span class="auth-form__switch-btn js_switch_login">Đăng nhập</span>
-                    </div>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="email" name="" required class="auth-form__input" id="" placeholder="Nhập Email">
+    <div class="Hieu_HTML">
+        <div class="modal js_modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Authen form -->
+                <!-- Register form -->
+                <div class="auth-form auth-form_register ">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng kí</h3>
+                            <span class="auth-form__switch-btn js_switch_login">Đăng nhập</span>
                         </div>
-                        <div class="auth-form__group">
-                            <input type="password" name="" required class="auth-form__input" id="" placeholder="Nhập Mật khẩu">
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" name="" required class="auth-form__input" id="" placeholder="Nhập Email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" name="" required class="auth-form__input" id="" placeholder="Nhập Mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" name="" required class="auth-form__input" id="" placeholder="Nhập lại Mật khẩu">
+                            </div>
                         </div>
-                        <div class="auth-form__group">
-                            <input type="password" name="" required class="auth-form__input" id="" placeholder="Nhập lại Mật khẩu">
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                                <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__control ">
+                            <button class="btn auth-form__control-back btn--normal js-close-register">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
                         </div>
                     </div>
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy-text">
-                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
-                        </p>
-                    </div>
-                    <div class="auth-form__control ">
-                        <button class="btn auth-form__control-back btn--normal js-close-register">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÍ</button>
+                    <div class="auth-form__social">
+                        <a href="" class=" btn btn--size-s btn--with-icon auth-form__social--facebook">
+                            <i class="auth-form__social--icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__social--google btn btn--size-s btn--with-icon">
+                            <i class="fa-brands fa-google"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
                     </div>
                 </div>
-                <div class="auth-form__social">
-                    <a href="" class=" btn btn--size-s btn--with-icon auth-form__social--facebook">
-                        <i class="auth-form__social--icon fa-brands fa-facebook-square"></i>
-                        <span class="auth-form__social-title">
-                            Kết nối với Facebook
-                        </span>
-                    </a>
-                    <a href="" class="auth-form__social--google btn btn--size-s btn--with-icon">
-                        <i class="fa-brands fa-google"></i>
-                        <span class="auth-form__social-title">
-                            Kết nối với Google
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <!-- Login -->
-            <div class="auth-form auth-form_login js_login ">
-                <div class="auth-form__container">
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn js_switch_register">Đăng kí</span>
-                    </div>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="email" name="" required class="auth-form__input" id="" placeholder="Nhập Email">
+                <!-- Login -->
+                <div class="auth-form auth-form_login js_login ">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn js_switch_register">Đăng kí</span>
                         </div>
-                        <div class="auth-form__group">
-                            <input type="password" name="" required class="auth-form__input" id="" placeholder="Nhập Mật khẩu">
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" name="" required class="auth-form__input" id="" placeholder="Nhập Email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" name="" required class="auth-form__input" id="" placeholder="Nhập Mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-sperate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__control ">
+                            <button class="btn auth-form__control-back btn--normal js-close-login">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
                         </div>
                     </div>
-                    <div class="auth-form__aside">
-                        <div class="auth-form__help">
-                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
-                            <span class="auth-form__help-sperate"></span>
-                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
-                        </div>
+                    <div class="auth-form__social">
+                        <a href="" class=" btn btn--size-s btn--with-icon auth-form__social--facebook">
+                            <i class="auth-form__social--icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__social--google btn btn--size-s btn--with-icon">
+                            <i class="fa-brands fa-google"></i>
+                            <span class="auth-form__social-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
                     </div>
-                    <div class="auth-form__control ">
-                        <button class="btn auth-form__control-back btn--normal js-close-login">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
-                    </div>
-                </div>
-                <div class="auth-form__social">
-                    <a href="" class=" btn btn--size-s btn--with-icon auth-form__social--facebook">
-                        <i class="auth-form__social--icon fa-brands fa-facebook-square"></i>
-                        <span class="auth-form__social-title">
-                            Kết nối với Facebook
-                        </span>
-                    </a>
-                    <a href="" class="auth-form__social--google btn btn--size-s btn--with-icon">
-                        <i class="fa-brands fa-google"></i>
-                        <span class="auth-form__social-title">
-                            Kết nối với Google
-                        </span>
-                    </a>
                 </div>
             </div>
         </div>

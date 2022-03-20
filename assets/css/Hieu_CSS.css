@@ -1,0 +1,549 @@
+.auth-form {
+    width: 500px;
+    overflow: hidden;
+}
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 0 12px;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #888;
+}
+
+.auth-form__aside {
+    margin-top: 18x;
+    font-weight: 500;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__policy-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-form__control {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form_register {
+    display: none;
+}
+
+.auth-form_login {
+    display: none;
+}
+
+.auth-form__control-back {
+    margin-right: 8px;
+}
+
+.auth-form__social {
+    background-color: #F5F5F5;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.auth-form__social--facebook {
+    color: #fff;
+    background-color: #3a5a98;
+}
+
+.auth-form__social--icon {
+    font-size: 1.8rem;
+}
+
+.auth-form__social--facebook .auth-form__social--icon {
+    color: var(--white-color);
+}
+
+.auth-form__social-title {
+    margin: 0 36px;
+}
+
+.auth-form__social--google {
+    color: #666;
+    background-color: var(--white-color);
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help-sperate {
+    display: block;
+    height: 22px;
+    margin: -4px 16px 0;
+    border-left: 1px solid #EAEAEA;
+}
+
+.auth-form__help-forgot {
+    color: var(--primary-color);
+}
+
+
+/* Button */
+
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable {
+    cursor: default;
+    background-color: #666;
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
+
+
+/* Header Video */
+
+.header_video {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 1200px;
+    height: 235px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+    align-items: center;
+}
+
+.header_video-img {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header_video-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+}
+
+
+/* Section */
+
+.header__section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 1200px;
+    margin: 36px auto 0;
+    min-height: 108px;
+}
+
+.header__section-item {
+    text-decoration: none;
+}
+
+.header__section-item-body {
+    width: 100px;
+    transition: transform linear 0.05s;
+    will-change: transform;
+}
+
+.header__section-item-body:hover {
+    transform: translateY(-2px);
+}
+
+.header__section-item-option {
+    margin: 18px auto 8px;
+    border-radius: 50%;
+}
+
+.header__section-item-option-mode {
+    height: 100%;
+    position: relative;
+}
+
+.header__section-item-option-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 45px;
+    margin-left: 27px;
+}
+
+.header__section-item-option-img--active {
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+.header__section-item-option-text {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #222;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.section__wrap-banner {
+    margin-top: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 0;
+    border-top: 4px solid var(--primary-color);
+    padding-top: 12px;
+    background-color: var(--white-color);
+}
+
+.footer__shopee-info {
+    margin-top: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .09);
+    padding-bottom: 20px;
+}
+
+.footer__shopee-info-header {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__shopee-info-body {
+    font-size: 1.2rem;
+}
+
+.footer__shopee-info-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer__shopee-info-link-label {
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.footer__shopee-info-link-label-icon {
+    font-size: 2rem;
+    font-weight: 50;
+    padding-left: 12px;
+    color: var(--primary-color);
+}
+
+.footer__wrap-body {
+    margin-top: 50px;
+}
+
+.footer__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.footer__list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__list-item-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 6px 0;
+}
+
+.footer__list-item-link:hover {
+    color: var(--primary-color);
+}
+
+.footer__list-item-icon {
+    font-size: 1.6rem;
+    margin: -6px 8px 0 0;
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr {
+    width: 80px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+}
+
+.footer__download-app {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__download-app-img {
+    height: 16px;
+}
+
+.footer__download-app-img-gg {
+    margin-bottom: 6px;
+}
+
+.footer__bottom {
+    padding-top: 12px;
+    background-color: #f5f5f5;
+}
+
+.footer__bottom-policy-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 28px 0 0;
+    padding-left: 0;
+}
+
+.footer__bottom-policy-list-item {
+    margin: 0 12px;
+    position: relative;
+}
+
+.footer__bottom-policy-list-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    color: rgba(0, 0, 0, .54);
+    padding: 0 16px;
+}
+
+.footer__bottom-policy-list-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -16px;
+    height: 16px;
+    border-left: 1px solid var(--border-color);
+}
+
+.footer__bottom-policy-list-item:last-child::after {
+    border-left: none;
+}
+
+.footer__bottom-policy-check {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__bottom-policy-company-header {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.footer__bottom-policy-check-link {
+    padding-left: 30px;
+}
+
+.footer__bottom-policy-check-img {
+    width: 120px;
+}
+
+.footer__bottom-policy-company {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .54);
+    display: block;
+    text-align: center;
+}
+
+.footer__heading-pay-img-visa {
+    width: 55px;
+    height: 18px;
+    background-size: 1347.2727272727273% 983.3333333333334%;
+    background-position: 84.6938775510204% 6.289308176100629%;
+}
+
+.footer__heading-pay-img-master-card {
+    width: 55px;
+    height: 29px;
+    background-size: 1347.2727272727273% 610.3448275862069%;
+    background-position: 49.416909620991255% 41.891891891891895%;
+}
+
+.footer__heading-pay-img-jcb {
+    width: 55px;
+    height: 23px;
+    background-size: 1347.2727272727273% 769.5652173913044%;
+    background-position: 38.48396501457726% 38.311688311688314%;
+}
+
+.footer__heading-pay-img-amex {
+    width: 55px;
+    height: 24px;
+    background-size: 1482% 804.5454545454545%;
+    background-position: 1.447178002894356% 6.451612903225806%;
+}
+
+.footer__heading-pay-img-cod {
+    width: 50px;
+    height: 29px;
+    background-size: 1482% 610.3448275862069%;
+    background-position: 59.91316931982634% 63.513513513513516%;
+}
+
+.footer__heading-pay-img-pay-0 {
+    width: 55px;
+    height: 29px;
+    background-size: 1347.2727272727273% 610.3448275862069%;
+    background-position: 19.97084548104956% 66.21621621621621%;
+}
+
+.footer__heading-pay-img-shopee {
+    width: 55px;
+    height: 12px;
+    background-size: 741% 931.578947368421%;
+    background-position: 71.9188767550702% 6.329113924050633%;
+}
+
+.footer__heading-transport-shopee-x {
+    width: 55px;
+    height: 10px;
+    background-size: 667.5675675675676% 983.3333333333334%;
+    background-position: 65.71428571428571% 35.22012578616352%;
+}
+
+.footer__heading-transport-ghtk {
+    width: 55px;
+    height: 18px;
+    background-size: 1347.2727272727273% 983.3333333333334%;
+    background-position: 19.97084548104956% 37.735849056603776%;
+}
+
+.footer__heading-transport-ghn {
+    width: 55px;
+    height: 29px;
+    background-size: 1347.2727272727273% 610.3448275862069%;
+    background-position: 9.037900874635568% 40.54054054054054%;
+}
+
+.footer__heading-transport-viettle {
+    width: 55px;
+    height: 40px;
+    background-size: 578.90625% 138.28125%;
+    background-position: 88.90701468189233% 100%;
+}
+
+.footer__heading-transport-viet-nam {
+    width: 55px;
+    height: 27px;
+    background-size: 1347.2727272727273% 655.5555555555555%;
+    background-position: 1.4577259475218658% 72.66666666666667%;
+}
+
+.footer__heading-transport-j-and-t {
+    width: 55px;
+    height: 16px;
+    background-size: 1347.2727272727273% 1106.25%;
+    background-position: 95.6268221574344% 6.211180124223603%;
+}
+
+.footer__heading-transport-grab {
+    width: 55px;
+    height: 15px;
+    background-size: 552.9850746268656% 610.3448275862069%;
+    background-position: 29.9835255354201% 6.756756756756757%;
+}
+
+.footer__heading-transport-ninja {
+    width: 50px;
+    height: 20px;
+    background-size: 1235% 680.7692307692307%;
+    background-position: 55.947136563876654% 6.622516556291391%;
+}
+
+.footer__heading-pay-best-express {
+    width: 55px;
+    height: 22px;
+    background-size: 1029.1666666666667% 590%;
+    background-position: 13.452914798206278% 6.802721088435374%;
+}
